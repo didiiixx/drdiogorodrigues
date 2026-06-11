@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Diogo Rodrigues | Psiquiatra — Saúde Mental e Bem-Estar</title>
+  <meta name="description" content="Atendimento psiquiátrico especializado e humanizado. Consultas presenciais e online focadas no equilíbrio emocional, diagnóstico preciso e tratamentos integrativos. Agende sua consulta.">
+  
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon Conceitual (SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22none%22 stroke=%22%2338bdf8%22 stroke-width=%228%22 stroke-dasharray=%22180 80%22 transform=%22rotate(45 50 50)%22/></svg>">
+</head>
+<body>
+
+  <!-- Elementos de Iluminação de Fundo (Glows) -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-glow-3"></div>
+
+  <!-- Cabeçalho (Header) -->
+  <header class="header">
+    <div class="container header-nav">
+      <a href="#home" class="logo" id="header-logo">
+        <div class="logo-icon"></div>
+        DIOGO<span>RODRIGUES</span>
+      </a>
+      
+      <button class="mobile-menu-toggle" aria-label="Abrir menu de navegação" id="menu-toggle-btn">&#9776;</button>
+      
+      <nav class="nav-container">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+          <li><a href="#funcionamento" class="nav-link">Consulta</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+          <li><a href="#contato" class="btn btn-primary btn-sm" id="nav-cta-btn">Agendar Consulta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero (Início) -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          Atendimento Presencial & Online
+        </div>
+        <h1 class="hero-title">
+          Cuidado humanizado para restaurar o seu <span>equilíbrio mental</span>.
+        </h1>
+        <p class="hero-description">
+          Dr. Diogo Rodrigues — Médico Psiquiatra (USP). Ofereço uma abordagem integrada e sem julgamentos, combinando ciência de ponta e escuta atenta para ajudar você a superar a ansiedade, a depressão e o burnout.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Diogo%20Rodrigues." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="hero-whatsapp-cta">
+            <!-- Ícone WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Agendar por WhatsApp
+          </a>
+          <a href="#sobre" class="btn btn-secondary" id="hero-secondary-cta">Conhecer abordagem</a>
+        </div>
+        <div class="hero-trust-indicators">
+          <div class="trust-item">
+            <h4>+10</h4>
+            <p>Anos de Experiência</p>
+          </div>
+          <div class="trust-item">
+            <h4>2.5k+</h4>
+            <p>Vidas Transformadas</p>
+          </div>
+          <div class="trust-item">
+            <h4>100%</h4>
+            <p>Sigilo & Ética</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="assets/images/doctor_portrait.png" alt="Dr. Diogo Rodrigues - Médico Psiquiatra olhando sorridente em seu consultório" width="450" height="562">
+          
+          <div class="hero-image-card">
+            <div class="hero-card-icon">
+              <!-- Ícone de cérebro ou saúde -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="hero-card-text">
+              <h5>Abordagem Acolhedora</h5>
+              <p>Tratamentos baseados em evidência científica</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Diferenciais (Destaques Rápidos) -->
+  <section class="highlights">
+    <div class="container highlights-grid">
+      
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">
+          <!-- Ícone Coração/Empatia -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </div>
+        <div class="highlight-text">
+          <h3>Escuta sem Julgamentos</h3>
+          <p>Consultas com tempo estendido e ambiente seguro para você expressar suas angústias livremente.</p>
+        </div>
+      </div>
+
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">
+          <!-- Ícone Escudo/Sigilo -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+        <div class="highlight-text">
+          <h3>Sigilo Absoluto</h3>
+          <p>Privacidade total garantida sob o código de ética médica, tanto no atendimento online quanto presencial.</p>
+        </div>
+      </div>
+
+      <div class="highlight-card reveal">
+        <div class="highlight-icon">
+          <!-- Ícone Ciência/Certificado -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <div class="highlight-text">
+          <h3>Base Científica</h3>
+          <p>Diagnósticos e prescrições terapêuticas fundamentadas nos consensos científicos mais modernos do mundo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção Sobre o Médico -->
+  <section id="sobre" class="about">
+    <div class="container about-grid">
+      <div class="about-image-container reveal">
+        <img src="assets/images/therapy_office.png" alt="Consultório moderno e aconchegante do Dr. Diogo Rodrigues com poltrona confortável" width="500" height="500">
+      </div>
+      
+      <div class="about-content reveal">
+        <span class="badge">Sobre o Profissional</span>
+        <h2>Cuidado humanizado focado em quem <span>você é</span>.</h2>
+        
+        <div class="about-text">
+          <p>
+            Acredito que a psiquiatria moderna deve ir além do diagnóstico de sintomas e da prescrição de medicamentos. Meu foco principal é compreender a individualidade, o estilo de vida e o histórico emocional de cada paciente.
+          </p>
+          <p>
+            Graduado em Medicina com residência em Psiquiatria pela Universidade de São Paulo (USP), dedico minha carreira a oferecer tratamentos personalizados, baseados no respeito e na empatia mútuos, auxiliando as pessoas a alcançarem a melhor versão de sua saúde mental.
+          </p>
+        </div>
+        
+        <div class="credentials-list">
+          <div class="credential-item">
+            <div class="credential-dot"></div>
+            <div class="credential-text">
+              <h4>Membro da ABP</h4>
+              <p>Associação Brasileira de Psiquiatria</p>
+            </div>
+          </div>
+          
+          <div class="credential-item">
+            <div class="credential-dot"></div>
+            <div class="credential-text">
+              <h4>Formação na USP</h4>
+              <p>Residência e especializações no HC-FMUSP</p>
+            </div>
+          </div>
+          
+          <div class="credential-item">
+            <div class="credential-dot"></div>
+            <div class="credential-text">
+              <h4>Tratamento Integrado</h4>
+              <p>Parcerias com psicólogos e terapeutas</p>
+            </div>
+          </div>
+          
+          <div class="credential-item">
+            <div class="credential-dot"></div>
+            <div class="credential-text">
+              <h4>Atualização Constante</h4>
+              <p>Presença ativa em congressos internacionais</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#contato" class="btn btn-primary" id="about-cta-btn">Agendar uma Consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Especialidades (Áreas de Atuação) -->
+  <section id="especialidades" class="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Áreas de Atuação</span>
+        <h2 class="section-title">Tratamentos especializados para o seu <span>bem-estar</span></h2>
+        <p class="section-subtitle">
+          Cada paciente possui necessidades únicas. Abaixo estão algumas das principais queixas tratadas no consultório com planos terapêuticos personalizados.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone Ansiedade/Nuvem ou Tempestade -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-2.79-2.54-4.5-5-4.5-.42-1.95-2.04-3.5-4-3.5a3.9 3.9 0 0 0-3 1.5 5 5 0 0 0-4 5A3.5 3.5 0 0 0 8.5 19"></path></svg>
+          </div>
+          <h3 class="service-title">Ansiedade & Pânico</h3>
+          <p class="service-description">
+            Tratamento de crises agudas de pânico, ansiedade generalizada, fobias e preocupações excessivas, unindo medicamentos adequados a técnicas de controle físico-mental.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20tratamento%20para%20Ansiedade%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-ansiedade-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone Tristeza/Sol por trás das nuvens ou Coração quebrado -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+          </div>
+          <h3 class="service-title">Depressão e Humor</h3>
+          <p class="service-description">
+            Cuidado integral para episódios depressivos leves a graves e Transtorno Bipolar. Foco na restauração da vitalidade, ânimo e reconexão com o prazer de viver.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20tratamento%20para%20Depressão/Humor%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-depressao-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone Fogo/Bateria acabando/Burnout -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect><line x1="22" y1="11" x2="22" y2="13"></line></svg>
+          </div>
+          <h3 class="service-title">Burnout e Estresse</h3>
+          <p class="service-description">
+            Tratamento do esgotamento profissional extremo, fadiga crônica, insônia e ansiedade decorrentes do ambiente de trabalho sobrecarregado ou estresse crônico.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20tratamento%20para%20Burnout%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-burnout-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone TDAH/Raios ou Foco -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h3 class="service-title">TDAH em Adultos</h3>
+          <p class="service-description">
+            Avaliação diagnóstica especializada e tratamento de desatenção, procrastinação crônica, hiperatividade e impulsividade em adultos, promovendo produtividade e foco.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20avaliação%20de%20TDAH%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-tdah-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone Sono/Lua -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </div>
+          <h3 class="service-title">Transtornos do Sono</h3>
+          <p class="service-description">
+            Abordagem clínica para insônia, sonolência diurna excessiva e distúrbios de ritmo circadiano, restaurando as fases naturais e restauradoras do sono.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20Transtornos%20do%20Sono%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-sono-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <!-- Ícone Equilíbrio/Balança ou Florescer -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"></path></svg>
+          </div>
+          <h3 class="service-title">Psiquiatria Preventiva</h3>
+          <p class="service-description">
+            Voltada a pessoas sob constante estresse que desejam monitorar sua saúde mental, otimizar rotinas e prevenir o aparecimento de transtornos graves.
+          </p>
+          <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20conversar%20sobre%20Saúde%20Mental%20Preventiva%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="service-link" id="service-preventiva-btn">
+            Saiba mais 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Como Funciona a Consulta -->
+  <section id="funcionamento" class="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">O Atendimento</span>
+        <h2 class="section-title">Como funciona a sua <span>jornada</span></h2>
+        <p class="section-subtitle">
+          Um fluxo transparente focado em proporcionar conforto, clareza técnica e segurança emocional desde o primeiro contato.
+        </p>
+      </div>
+      
+      <div class="process-steps">
+        
+        <div class="step-card reveal">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Agendamento</h3>
+          <p class="step-description">
+            Clique nos botões e fale conosco via WhatsApp. Escolha o melhor dia e horário para a sua consulta rápida.
+          </p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Primeira Consulta</h3>
+          <p class="step-description">
+            Uma sessão detalhada de 60 a 90 minutos para te ouvir com calma, analisar histórico e desenhar o diagnóstico inicial.
+          </p>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Plano Terapêutico</h3>
+          <p class="step-description">
+            Prescrição medicamentosa (se necessário), encaminhamentos e monitoramento terapêutico contínuo com canal direto de suporte.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Depoimentos (Confidenciais) -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Relatos Reais</span>
+        <h2 class="section-title">O impacto do cuidado <span>humanizado</span></h2>
+        <p class="section-subtitle">
+          A fim de respeitar o sigilo profissional estabelecido pelo Código de Ética Médica, as identidades dos pacientes foram abreviadas.
+        </p>
+      </div>
+      
+      <div class="testimonials-grid">
+        
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">“</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Fui ao Dr. Diogo depois de passar por dois psiquiatras que mal me olharam nos olhos. A consulta dele é totalmente diferente. Ele ouve de verdade, explica a ação de cada remédio e montou um tratamento que mudou minha relação com a ansiedade."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L.M.</div>
+            <div class="author-info">
+              <h4>L. M.</h4>
+              <p>Paciente há 1 ano (Ansiedade)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">“</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Cheguei ao consultório no ápice de um Burnout, sem conseguir trabalhar ou dormir. O Dr. Diogo foi extremamente acolhedor. Ele me ajudou com a medicação necessária e me orientou como reorganizar minha rotina profissional. Sou muito grato."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J.R.</div>
+            <div class="author-info">
+              <h4>J. R.</h4>
+              <p>Paciente há 6 meses (Burnout)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="quote-icon">“</div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Excelente profissional. Trato minha depressão recorrente com ele. Ele é acessível, responde dúvidas com rapidez e sempre avalia os tratamentos mais inovadores. O consultório é super discreto e acolhedor."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A.C.</div>
+            <div class="author-info">
+              <h4>A. C.</h4>
+              <p>Paciente há 2 anos (Depressão)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Perguntas Frequentes (FAQ) -->
+  <section id="faq" class="faq">
+    <div class="container faq-grid">
+      <div class="faq-intro-card reveal">
+        <span class="badge">Perguntas Frequentes</span>
+        <h3>Ficou com alguma dúvida?</h3>
+        <p>
+          Se a sua dúvida não estiver listada ao lado, sinta-se à vontade para enviar uma mensagem diretamente para nossa recepção via WhatsApp.
+        </p>
+        <a href="https://wa.me/5569984159886?text=Olá,%20tenho%20uma%20dúvida%20sobre%20as%20consultas%20com%20o%20Dr.%20Diogo." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="faq-whatsapp-btn">
+          Enviar dúvida no WhatsApp
+        </a>
+      </div>
+      
+      <div class="faq-accordion reveal">
+        
+        <div class="faq-item">
+          <button class="faq-trigger" id="faq-q1">
+            Qual a duração média das consultas?
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              A primeira consulta (avaliação inicial) tem duração média de 60 a 90 minutos. As consultas de retorno e acompanhamento duram cerca de 45 a 50 minutos, tempo necessário para analisarmos os resultados terapêuticos e ajustar a conduta médica com a calma devida.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" id="faq-q2">
+            Como funciona o atendimento online?
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              As consultas online são realizadas via videochamada em plataforma segura e criptografada (em conformidade com a LGPD e resoluções do CFM). As receitas médicas, atestados e pedidos de exame são emitidos digitalmente com assinatura certificada ICP-Brasil, aceitos em farmácias e laboratórios de todo o país.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" id="faq-q3">
+            O Dr. Diogo atende convênios médicos?
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Todos os atendimentos são particulares para garantir o tempo e a dedicação total que cada caso exige. No entanto, fornecemos nota fiscal detalhada e relatório médico completo para que você possa solicitar o reembolso integral ou parcial junto ao seu plano de saúde (Bradesco, SulAmérica, Amil, Care Plus, etc.).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" id="faq-q4">
+            Como funciona a receita digital controlada?
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Medicamentos de controle especial (como as receitas azuis ou amarelas de tarja preta) dependendo do estado legal podem exigir o documento físico em papel físico. Nesses casos especiais, nossa clínica emite a receita física e a envia por portador ou Correios diretamente ao endereço do paciente, sem custo adicional. As demais receitas de controle são enviadas digitalmente via SMS ou WhatsApp com QR Code oficial de verificação.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" id="faq-q5">
+            O que acontece se eu precisar de suporte fora da consulta?
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Pacientes ativos em acompanhamento contam com um canal de comunicação direta por WhatsApp para esclarecer dúvidas sobre efeitos colaterais das medicações, ajustes de posologia ou sintomas urgentes durante o horário comercial.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato & Agendamento -->
+  <section id="contato" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="badge">Agendamento</span>
+        <h2>Dê o primeiro passo para a sua <span>saúde mental</span></h2>
+        <p>
+          Agendar uma consulta é simples. Escolha o atendimento online (de qualquer lugar do Brasil) ou presencial em nosso moderno consultório.
+        </p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <!-- Ícone Localização -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Consultório Presencial</h4>
+              <p>Av. Paulista, 1000 — Conj. 1205 — Bela Vista, São Paulo - SP</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <!-- Ícone Relógio -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="contact-item-text">
+              <h4>Horário de Atendimento</h4>
+              <p>Segunda a Sexta: 08:00 às 20:00 | Sábado: 09:00 às 13:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-cta-box reveal">
+        <h3>Marcar Consulta</h3>
+        <p>Ao clicar abaixo, você será redirecionado para a nossa recepção de agendamentos no WhatsApp.</p>
+        
+        <ul>
+          <li>
+            <!-- Checkmark verde -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Agendamento rápido em menos de 5 minutos
+          </li>
+          <li>
+            <!-- Checkmark verde -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Opções flexíveis de datas
+          </li>
+          <li>
+            <!-- Checkmark verde -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Envio de orientações pré-consulta
+          </li>
+        </ul>
+        
+        <a href="https://wa.me/5569984159886?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Diogo%20Rodrigues." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="contact-whatsapp-main">
+          <!-- Ícone WhatsApp -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé (Footer) -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>DIOGO<span>RODRIGUES</span></h3>
+        <p>Saúde mental baseada em evidência científica com acolhimento humanizado, ético e confidencial.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#funcionamento">Como Funciona</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Contato Direto</h4>
+        <p>Telefone: (11) 3214-5678</p>
+        <p>E-mail: contato@drdiogorodrigues.com.br</p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 Dr. Diogo Rodrigues Psiquiatria. Todos os direitos reservados.
+      </div>
+      <div class="footer-regulatory">
+        Dr. Diogo Rodrigues | Médico Psiquiatra<br>
+        CRM-SP 123456 | RQE 78910
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Interativos -->
+  <script src="script.js"></script>
+</body>
+</html>
